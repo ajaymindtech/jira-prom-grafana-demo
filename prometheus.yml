@@ -1,0 +1,33 @@
+# scrape_configs:
+#   - job_name: 'jira'
+#     scrape_interval: 15s
+#     static_configs:
+#       - targets: ['localhost:5000']
+
+
+# global:
+#   scrape_interval: 15s
+
+# scrape_configs:
+#   - job_name: 'prometheus'
+#     static_configs:
+#       - targets: ['host.docker.internal:9090']
+
+# scrape_configs:
+#       - job_name: 'jira'
+#         scrape_interval: 60s
+#         static_configs:
+#           - targets: ['localhost:8000']
+
+
+# scrape_configs:
+#   - job_name: 'jira'
+#     scrape_interval: 60s
+#     static_configs:
+#       - targets: ['host.docker.internal:8000']
+
+scrape_configs:
+  - job_name: 'jira'
+    scrape_interval: 60s
+    static_configs:
+      - targets: ['my-exporter:8000']
