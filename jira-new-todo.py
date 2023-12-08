@@ -3,10 +3,11 @@ import requests
 from requests.auth import HTTPBasicAuth
 from prometheus_client import start_http_server, Gauge
 
+
 # Configuration
-JIRA_DOMAIN = "================="
-JIRA_USERNAME = "====="
-JIRA_TOKEN = "====="  # Use environment variables or a secure method to store this!
+JIRA_DOMAIN = "ajdevopssolutions.atlassian.net"
+JIRA_USERNAME = "ajaybonganitrainer@gmail.com"
+JIRA_TOKEN = "ATATT3xFfGF0in6D11PKF1Zy8avAxmNQ8tztjoyYnytMGtfOa1VENs4s45SCJwpay7UfjfWhUIkUp9WjHm4k9wLTUj_smE3cua06oKUflHHnd2X1vh-NCNfi2M4ln_1caOpeCcs8KxSdVO-tnuaIPskIBs8UZ8X5sUhI3tyiL2t_o7-3ZeIsDHA=AD6BCC1F"  # Use environment variables or a secure method to store this!
 JIRA_PROJECT = "test-jira-dashboard"
 PROMETHEUS_PORT = 8000
 
